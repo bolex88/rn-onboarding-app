@@ -26,9 +26,14 @@ const Shopping = ({ navigation }) => {
             </View>
 
             <View style={styles.viewStyle}>
-                <Text></Text>
-                <Text style={styles.TextOne}> . . . </Text>
-                <Text style={styles.TextTwo}>Skip</Text>
+              
+                    <View style={styles.DotOne} />
+                    <View style={styles.DotTwo} />
+                    <View style={styles.DotTwo} />
+                
+                <View>
+                    <Text style={styles.TextTwo}>Skip</Text>
+                </View>
             </View>
         </View>
     )
@@ -80,13 +85,26 @@ const styles = StyleSheet.create({
     viewStyle: {
         marginTop: 50,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        alignItems: 'center'
     },
-    TextOne: {
-        color: 'blue',
+    DotOne: {
+        width: 20, 
+        height: 10, 
+        backgroundColor: 'blue', 
+        borderRadius: 15, 
+        marginLeft: 150
+    },
+    DotTwo: {
+        width: 10, 
+        height: 10, 
+        backgroundColor: 'steelblue', 
+        borderRadius: 15, 
+
     },
     TextTwo: {
         color: 'gray',
+        alignSelf: 'flex-end',
+        marginLeft: 130
     }
   
 });

@@ -16,9 +16,12 @@ const Payment = ({ navigation }) => {
                 <Text style={styles.textbutton}>Get Started</Text>
             </TouchableOpacity>
             <View style={styles.viewStyle}>
-                <Text style={styles.TextOne}>Previous</Text>
-                <Text style={styles.TextTwo}> . . . </Text>
-                <Text></Text>
+                <View>
+                    <Text style={styles.TextOne}>Previous</Text>
+                </View>
+                    <View style={styles.DotOne} />
+                    <View style={styles.DotOne} />
+                    <View style={styles.DotTwo} />
             </View>
         </View>
     )
@@ -69,14 +72,26 @@ const styles = StyleSheet.create({
     },
     viewStyle: {
         marginTop: 50,
-        flexDirection: 'row', 
-        justifyContent: 'space-between'
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     TextOne: {
-        color: 'gray'
+        color: 'gray',
+        alignSelf: 'flex-start',
+        marginLeft: 15,
+        marginRight: 90
     },
-    TextTwo: {
-        color: 'blue',
+    DotOne: {
+        width: 10, 
+        height: 10, 
+        backgroundColor: 'steelblue', 
+        borderRadius: 15, 
+    },
+    DotTwo: {
+        width: 20, 
+        height: 10, 
+        backgroundColor: 'blue', 
+        borderRadius: 15, 
     },
 });
 
