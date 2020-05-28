@@ -29,7 +29,7 @@ const Shopping = ({ navigation }) => {
               
                     <View style={styles.DotOne} />
                     <View style={styles.DotTwo} />
-                    <View style={styles.DotTwo} />
+                    <View style={styles.DotThree} />
                 
                 <View>
                   <TouchableOpacity onPress={() =>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 5,
         marginLeft: 15,
-        marginTop: 15,
+        marginTop: 80,
 
     },
     textp: {
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         maxWidth: 300,
         marginStart: 25,
         marginEnd: 25,
-        marginTop: 10,
+        marginTop: 30,
         marginBottom: 30,
         alignItems: 'center'
     },
@@ -95,19 +95,29 @@ const styles = StyleSheet.create({
         height: 10, 
         backgroundColor: 'blue', 
         borderRadius: 15, 
-        marginLeft: 150
+        marginLeft: 154,
+        marginRight: 4
     },
     DotTwo: {
         width: 10, 
         height: 10, 
         backgroundColor: 'steelblue', 
         borderRadius: 15, 
+        marginRight: 2
+
+    },
+    DotThree: {
+        width: 10, 
+        height: 10, 
+        backgroundColor: 'steelblue', 
+        borderRadius: 15, 
+        marginLeft: 2
 
     },
     TextTwo: {
         color: 'gray',
         alignSelf: 'flex-end',
-        marginLeft: 130
+        marginLeft: 120
     }
   
 });

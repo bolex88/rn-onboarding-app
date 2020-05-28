@@ -10,11 +10,12 @@ const navigator = createStackNavigator({
   AddCart: Cart,
   Pay: Payment
 }, {
-  initialRouteName: "Online",
-  defaultNavigationOptions: {
-    title: ''
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
   }
-});
+ }
+);
 
 const App = createAppContainer(navigator)
 

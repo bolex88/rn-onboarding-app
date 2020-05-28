@@ -23,8 +23,8 @@ const Payment = ({ navigation }) => {
                   </TouchableOpacity>
                 </View>
                     <View style={styles.DotOne} />
-                    <View style={styles.DotOne} />
                     <View style={styles.DotTwo} />
+                    <View style={styles.DotThree} />
             </View>
         </View>
     )
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 5,
         marginLeft: 15,
-        marginTop: 15
+        marginTop: 80
 
     },
     textp: {
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         maxWidth: 300,
         marginStart: 25,
         marginEnd: 25,
-        marginTop: 10,
+        marginTop: 30,
         marginBottom: 30,
         alignItems: 'center'
     },
@@ -88,13 +88,22 @@ const styles = StyleSheet.create({
         width: 10, 
         height: 10, 
         backgroundColor: 'steelblue', 
-        borderRadius: 15, 
+        borderRadius: 15,
+        marginRight: 2 
     },
     DotTwo: {
+        width: 10, 
+        height: 10, 
+        backgroundColor: 'steelblue', 
+        borderRadius: 15,
+        marginLeft: 2 
+    },
+    DotThree: {
         width: 20, 
         height: 10, 
         backgroundColor: 'blue', 
-        borderRadius: 15, 
+        borderRadius: 15,
+        marginLeft: 4
     },
 });
 
