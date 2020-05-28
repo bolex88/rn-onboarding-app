@@ -17,7 +17,10 @@ const Payment = ({ navigation }) => {
             </TouchableOpacity>
             <View style={styles.viewStyle}>
                 <View>
+                <TouchableOpacity onPress={() =>
+                      navigation.navigate('AddCart')}>
                     <Text style={styles.TextOne}>Previous</Text>
+                  </TouchableOpacity>
                 </View>
                     <View style={styles.DotOne} />
                     <View style={styles.DotOne} />

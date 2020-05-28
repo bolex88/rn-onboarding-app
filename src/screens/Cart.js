@@ -19,13 +19,19 @@ const Cart = ({ navigation }) => {
             
             <View style={styles.viewStyle}>
                 <View>
+                  <TouchableOpacity onPress={() =>
+                      navigation.navigate('Online')}>
                     <Text style={styles.TextOne}>Previous</Text>
+                  </TouchableOpacity>
                 </View>
                     <View style={styles.DotOne} />
                     <View style={styles.DotTwo} />
                     <View style={styles.DotOne} />
                 <View>
+                  <TouchableOpacity onPress={() =>
+                      navigation.navigate('Pay')}>
                     <Text style={styles.TextTwo}>Skip</Text>
+                  </TouchableOpacity>
                 </View>
             </View>
         </View>

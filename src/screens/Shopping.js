@@ -32,7 +32,10 @@ const Shopping = ({ navigation }) => {
                     <View style={styles.DotTwo} />
                 
                 <View>
+                  <TouchableOpacity onPress={() =>
+                      navigation.navigate('AddCart')}>
                     <Text style={styles.TextTwo}>Skip</Text>
+                  </TouchableOpacity>
                 </View>
             </View>
         </View>
