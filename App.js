@@ -9,7 +9,10 @@ const navigator = createStackNavigator({
   Online: Shopping,
   AddCart: Cart,
   Pay: Payment
-}, {
+}, 
+
+//removing the header from each screen
+{
   headerMode: 'none',
   navigationOptions: {
     headerVisible: false,

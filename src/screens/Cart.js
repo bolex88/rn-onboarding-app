@@ -8,6 +8,7 @@ const Cart = ({ navigation }) => {
               <Text style={styles.textp}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem neque nesciunt saepe, illum distinctio asperiores iste dolore quibusdam veritatis fugiat! Sapiente nesciunt officiis minima vitae temporibus, dicta quaerat alias cumque.
               </Text>
+            
             <Image style={styles.imagestyle}
             source={require('../../assets/images/add_to_cart.png')} 
              />
@@ -38,6 +39,7 @@ const Cart = ({ navigation }) => {
     )
 };
 
+// stylying of the add to cart screen!
 const styles = StyleSheet.create({
     background: {
         backgroundColor: 'white',

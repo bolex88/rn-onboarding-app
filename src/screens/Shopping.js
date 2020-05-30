@@ -42,6 +42,7 @@ const Shopping = ({ navigation }) => {
     )
 };
 
+// styling of the shiiping screen!
 const styles = StyleSheet.create({
     background: {
         backgroundColor: 'white',

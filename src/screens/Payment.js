@@ -30,6 +30,7 @@ const Payment = ({ navigation }) => {
     )
 };
 
+// styling of the payment screen!
 const styles = StyleSheet.create({
     background: {
         backgroundColor: 'white',
